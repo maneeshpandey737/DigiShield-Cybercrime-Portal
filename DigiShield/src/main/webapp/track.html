@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DigiShield - Track Complaint</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .track-card {
+            background: rgba(30, 41, 59, 0.7);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        h2 { color: #38bdf8; margin-bottom: 20px; }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid #475569;
+            background: #0f172a;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background: #38bdf8;
+            color: #0f172a;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 96%;
+        }
+        input[type="submit"]:hover { background: #0ea5e9; }
+        a { display: block; margin-top: 15px; color: #94a3b8; text-decoration: none; font-size: 14px; }
+        a:hover { color: white; }
+    </style>
+</head>
+<body>
+
+<div class="track-card">
+    <h2>Track Complaint Status</h2>
+    <p style="color: #94a3b8;">Enter your Tracking ID below (e.g., DS-4)</p>
+    
+    <form action="TrackComplaint" method="GET">
+        <input type="text" name="trackingId" placeholder="Enter Tracking ID (e.g., DS-4)" required>
+        <input type="submit" value="Check Status">
+    </form>
+    
+    <a href="portal.html">← Back to Portal</a>
+</div>
+
+</body>
+</html>
